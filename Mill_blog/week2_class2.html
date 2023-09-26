@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="--bs-body-bg: #000000;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/baguetteBox.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="../index.html">DAVIS HARDY</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog.html">BLOG</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white d-flex masthead" style="background-image: url('header.jpg');height: 516px;min-height: 547px;">
+        <div class="container my-auto">
+            <div class="row" style="height: 426.5px;">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong></strong></h1>
+                    <picture><img src="../assets/img/mill_blog/class_4/blast.svg" width="100"></picture>
+                    <p class="text-faded mb-5" style="padding-top: 17px;">Optimization Nation</p>
+                    <p class="fs-6 text-start">After feedback, Team Dusty got to continued to create pre-viz in Houdini. Part of this process was optimizing the assets that we purchased prior to last class.</p><img src="../assets/img/mill_blog/class_4/Model_optimization_DH.jpg" width="500">
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">Our original high-res model was 2.4 GB. We knew that we'd have to optimize this somehow so our scenes could render quickly. Luckily, the model we bought came with an un-subdivided version that was 1.2 GB is size.<br><br>I then began to think about what pieces are duplicates of each other. I narrowed down the unique pieces to the wheels, a cabin, the engine, and the rubber connector between cabins (not shown in picture). After cleaning removing all the extraneous attributes from the pieces, I exported all of the pieces as FBX files so Anh could correct the UV's.</p>
+                    <p class="fs-6 text-start" style="padding-top: 12px;">After optimization, our models render much faster because less data is being interpreted by Houdini and Redshift. This optimization will also help the team render more efficiently on the farm because less data is being streamed from our farm's storage server to each node.</p>
+                    <p class="fs-6 text-start" style="padding-top: 12px;">I am now moving on to my FX work. I'll be starting the snow shot first.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio" class="p-0">
+        <div class="container-fluid p-0">
+            <div class="row g-0 popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/fullsize/6.jpg"></a></div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/baguetteBox.min.js"></script>
+    <script src="../assets/js/creative.js"></script>
+</body>
+
+</html>
