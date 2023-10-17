@@ -30,10 +30,10 @@
             <div class="row" style="height: 426.5px;">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-uppercase"><strong></strong></h1>
-                    <picture><img src="../assets/img/mill_blog/class_5/snow_wip.jpg" width="700" height="394"></picture>
                     <p class="text-faded mb-5" style="padding-top: 17px;">Vegetation Simulation</p>
-                    <p class="fs-6 text-start">After creating the snow simulation tests, I decided to work on the foliage simulation that we're planning to use near the train in shots 4 and 5.&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/869184726" width="560" height="315"></iframe>
-                    <p class="fs-6 text-center" style="padding-top: 8px;padding-bottom: 22px;">Birthrate set at 50,000</p>
+                    <p class="fs-6 text-start">After creating the snow simulation tests, I decided to work on the foliage simulation that we're planning to use near the train in shots 4 and 5.&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/875206359" width="560" height="315"></iframe>
+                    <p class="fs-6 text-center" style="padding-top: 8px;padding-bottom: 22px;">Sim created with pre-existing geometry</p>
+                    <p class="fs-6 text-start">To create the simulation setup, I used the connectivity node to add a class attribute to each "leaf". I then got lucky and found out that each leaf is a ribbon. In order to extract a curve for simulation, I deleted half the points to create a curve that can be easily simulated using Vellum. When I went to deform the mesh with the extracted curves, I found that there were odd deformations. In order to fix this in the future, I think I'll average the position of the non-deleted points and the deleted points to generate a line that runs up the center of the ribbon. The simulation completed in less than a minute on a Macbook air. It would be possible to simulate each plant or simulate a library of plants that could be animated based on the proximity of the train to each plant.</p>
                     <p class="fs-6 text-start">Due to time constraints, my efforts have been redirected towards creating the snow simulation in shot 3.</p>
                 </div>
             </div>
