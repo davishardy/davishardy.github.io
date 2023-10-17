@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="--bs-body-bg: #000000;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/baguetteBox.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="../index.html">DAVIS HARDY</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../blog.html">BLOG</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white d-flex masthead" style="background-image: url('header.jpg');height: 516px;min-height: 547px;">
+        <div class="container my-auto">
+            <div class="row" style="height: 426.5px;">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong></strong></h1>
+                    <picture><img src="../assets/img/mill_blog/class_5/snow_wip.jpg" width="700" height="394"></picture>
+                    <p class="text-faded mb-5" style="padding-top: 17px;">Gaining Velocity</p>
+                    <p class="fs-6 text-start">Last watched a few videos about vector fields and how they affect different types of simulations. I was working&nbsp;</p><img src="../assets/img/mill_blog/week_5/Screenshot%20from%202023-10-15%2020-19-04.png" width="700">
+                    <p class="fs-6 text-center" style="padding-top: 16px;padding-bottom: 5px;">Volume slice of the side view</p><img src="../assets/img/mill_blog/week_5/Screenshot%20from%202023-10-15%2020-19-33.png" width="300">
+                    <p class="fs-6 text-center" style="padding-top: 8px;padding-bottom: 22px;">Volume slice of the front view</p>
+                    <p class="fs-6 text-start">To mimic the difference in pressure created by a fast moving object,&nbsp; I created two velocity fields. I used shrinkwrap and remesh node to obtain lower-poly geometry for simulation purposes. I then used the peak node to displace the low-poly geometry away from the high-poly. I then used different noises and products to create a velocity field that pushes particles in toward the train. I later created another velocity field using then non-peaked points. To mix the values within both fields, I used multiple attribute paint and noises to create a normal vector for each point. I convert the normal attribute to velocity prior to rasterizing the volume.<br><br>To verify that the "pop advect volume" node worked, I created a small test:<br><br></p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/875201740" width="700" height="315"></iframe>
+                    <p>Here's team dusty's current progress on all shots:</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/875123032" width="560" height="315"></iframe>
+                    <p>That's all for this week.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio" class="p-0">
+        <div class="container-fluid p-0">
+            <div class="row g-0 popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/fullsize/6.jpg"></a></div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/baguetteBox.min.js"></script>
+    <script src="../assets/js/creative.js"></script>
+</body>
+
+</html>
