@@ -26,16 +26,18 @@
         </div>
     </nav>
     <header class="text-center text-white d-flex masthead" style="background-image: url('header.jpg');height: 516px;min-height: 547px;">
-        <div class="container my-auto" style="height: 238.094px;">
-            <div class="row" style="height: 208.5px;padding-bottom: -11px;">
-                <div class="col">
-                    <ul class="list-unstyled">
-                        <li></li>
-                        <li><a href="../Harbor_blog/week4_class1.html" style="padding: 8px;color: var(--bs-info-border-subtle);">Latest</a></li>
-                        <li><a href="../Harbor_blog/week1_class1.html" style="padding: 8px;">Week 1 - Class 1</a><a href="../Harbor_blog/week1_class2.html" style="padding: 8px;">Week 1 - Class 2</a></li>
-                        <li><a href="../Harbor_blog/week2_class1.html" style="padding: 8px;">Week 2 - Class 1</a><a href="../Harbor_blog/week2_class2.html" style="padding: 8px;">Week 2 - Class 2</a></li>
-                        <li><a href="../Harbor_blog/week4_class1.html" style="padding: 8px;">Week 4 - Class 1</a></li>
-                    </ul>
+        <div class="container my-auto">
+            <div class="row" style="height: 426.5px;">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong></strong></h1>
+                    <p class="text-faded mb-5" style="padding-top: 17px;">Plates and Pixels</p>
+                    <p class="fs-6 text-start">This past week we've done a lot of asset work.</p>
+                    <h2 class="text-start" style="padding: 0;padding-top: 14px;padding-bottom: 14px;">Tuesday - Jan 30</h2>
+                    <p class="fs-6 text-start">On Saturday, Austin, Josephine, and Chaithanya filmed the live action plate. I've linked our whole review video below.</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/907946918" width="560" height="315"></iframe>
+                    <p class="fs-6 text-start">My contribution this week was all on the CG side of things.<br><br>Shot 2:<br><br>I edited the camera move to be slower and only rotate around half of the character. This allows us to have less motion blur in our shot. There is still a small jitter in the animation that I will be working on in the following week.<br><br>I also created a new portal effect using the SOP level RBD tools. Here's the setup:</p><img src="../assets/img/harbor_blog/w4_c1/pixel_rbd.png" width="500">
+                    <p class="fs-6 text-center">Within the RBD solver I used pop nodes to affect the motion of the pixels.</p><img src="../assets/img/harbor_blog/w4_c1/pixel_rbd_pop_forces.png" width="300">
+                    <p class="fs-6 text-center">Here's how I built the velocity volume in the pop advect by volume node. I used the tangent field node to create the twirling force.</p><img src="../assets/img/harbor_blog/w4_c1/pixel_field.png" width="300">
+                    <p class="fs-6 text-start">Here are my priorities in order of importance for next review:<br><br>New portal revision<br>Fixing the shot 2 camera<br>Fade off portal<br><br></p>
                 </div>
             </div>
         </div>
@@ -43,19 +45,7 @@
     <section id="portfolio" class="p-0">
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/fullsize/4.jpg"></a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/fullsize/5.jpg"></a></div>
                 <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/fullsize/6.jpg"></a></div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" style="height: 160.062px;padding: 2px;padding-top: 0;padding-bottom: 0px;">
-        <div class="container">
-            <div class="row" style="padding-top: 47px;">
-                <div class="col-lg-4 text-center ms-auto"><a href="https://www.linkedin.com/in/davishardy/">https://www.linkedin.com/in/davishardy/</a></div>
-                <div class="col-lg-4 text-center me-auto">
-                    <p><a href="mailto:davischardy@gmail.com">davischardy@gmail.com</a></p>
-                </div>
             </div>
         </div>
     </section>
