@@ -32,11 +32,14 @@
             <div class="row" style="height: 426.5px;">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-uppercase"><strong></strong></h1>
-                    <p class="text-faded mb-5" style="padding-top: 17px;">Vegetation Simulation</p>
-                    <p class="fs-6 text-start">After creating the snow simulation tests, I decided to work on the foliage simulation that we're planning to use near the train in shots 4 and 5.&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/875206359" width="560" height="315"></iframe>
-                    <p class="fs-6 text-center" style="padding-top: 8px;padding-bottom: 22px;">Sim created with pre-existing geometry</p>
-                    <p class="fs-6 text-start">To create the simulation setup, I used the connectivity node to add a class attribute to each "leaf". I then got lucky and found out that each leaf is a ribbon. In order to extract a curve for simulation, I deleted half the points to create a curve that can be easily simulated using Vellum. When I went to deform the mesh with the extracted curves, I found that there were odd deformations. In order to fix this in the future, I think I'll average the position of the non-deleted points and the deleted points to generate a line that runs up the center of the ribbon. The simulation completed in less than a minute on a Macbook air. It would be possible to simulate each plant or simulate a library of plants that could be animated based on the proximity of the train to each plant.</p>
-                    <p class="fs-6 text-start">Due to time constraints, my efforts have been redirected towards creating the snow simulation in shot 3.</p>
+                    <p class="text-faded mb-5" style="padding-top: 17px;">Putting It All Together</p>
+                    <p class="fs-6 text-start">Over today and the next couple of days, we'll be compiling all of our fx tests and animation into a rough draft of the full advertisement.&nbsp;</p>
+                    <h2 class="text-start" style="padding: 0;padding-top: 14px;padding-bottom: 14px;">Thursday - Feb 1</h2>
+                    <p class="fs-6 text-start">In class today, we met and discussed our progress. After receiving feedback from our professors, we updated our priority list and created a&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/907946918" width="560" height="315"></iframe>
+                    <p class="fs-6 text-start">My contribution this week was all on the CG side of things.<br><br>Shot 2:<br><br>I edited the camera move to be slower and only rotate around half of the character. This allows us to have less motion blur in our shot. There is still a small jitter in the animation that I will be working on in the following week.<br><br>I also created a new portal effect using the SOP level RBD tools. Here's the setup:</p><img src="../assets/img/harbor_blog/w4_c1/pixel_rbd.png" width="500">
+                    <p class="fs-6 text-center">Within the RBD solver I used pop nodes to affect the motion of the pixels.</p><img src="../assets/img/harbor_blog/w4_c1/pixel_rbd_pop_forces.png" width="300">
+                    <p class="fs-6 text-center">Here's how I built the velocity volume in the pop advect by volume node. I used the tangent field node to create the twirling force.</p><img src="../assets/img/harbor_blog/w4_c1/pixel_field.png" width="300">
+                    <p class="fs-6 text-start">Here are my priorities in order of importance for next review:<br><br>New portal revision<br>Fixing the shot 2 camera<br>Fade off portal.<br><br></p>
                 </div>
             </div>
         </div>
