@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" style="--bs-body-bg: #000000;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="canonical" href="https://davishardy.com/senior_blog/fall/2024_10_7_senior_project_fall_class_9.html">
+    <meta property="og:url" content="https://davishardy.com/senior_blog/fall/2024_10_7_senior_project_fall_class_9.html">
+    <meta name="description" content="Davis Hardy, FX Artist/TD">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/baguetteBox.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="../../index.html">DAVIS HARDY</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../blog.html">BLOG</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white d-flex masthead" style="background-image: url('header.jpg');height: 516px;min-height: 547px;">
+        <div class="container my-auto">
+            <div class="row" style="height: 426.5px;">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="text-uppercase"><strong></strong></h1>
+                    <h2 class="text-start">Class 9</h2>
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">Progress Update:<br><br>Over the past couple of days I've rendered out the remaining shots in my 2D animatic. While editing, I realized that the add was too long. Due to this discovery, I had to extend and re-render shots. I also began to work on my USD pipeline named "Mesa".</p>
+                    <p class="fs-6 text-start" style="padding-top: 12px;">Here are the clips that I've rendered so far.</p>
+                    <h4 class="text-start" style="padding-top: 51px;">Current 3D Animatic</h4>
+                    <div class="text-center tutorial container my-5 ratio ratio-16x9" style="margin:0 auto"><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/1016902570?loop=1"></iframe></div>
+                    <p class="fs-6 text-start" style="padding-top: 12px;">I also lined up another animator and contacted Peter to notify that there have been changes.</p>
+                    <p class="fs-6 text-start" style="padding-top: 12px;">Here's a bit of sample code that I've written for Mesa<br><br><code># mkutils.py<br># Version 1.0.0<br># 2024-10-5<br># Davis Hardy<br><br># Utilities for make scripts<br><br># Import Modules<br>import os<br>import sys<br><br><br>def get_show():<br>&nbsp; &nbsp; '''<br>&nbsp; &nbsp; Retrieves the current show from an environment variable named "show"<br>&nbsp; &nbsp; Inputs : None<br>&nbsp; &nbsp; Outputs : Name of current show, path to current show<br>&nbsp; &nbsp; '''<br>&nbsp; &nbsp; try:<br>&nbsp; &nbsp; &nbsp; &nbsp; show_name = os.getenv("show_name")<br>&nbsp; &nbsp; &nbsp; &nbsp; show_root = os.getenv("show_root")<br>&nbsp; &nbsp; &nbsp; &nbsp; return show_name, show_root<br>&nbsp; &nbsp; except OSError:<br>&nbsp; &nbsp; &nbsp; &nbsp; print("Show name or show root not found")<br><br><br>def get_seqs():<br>&nbsp; &nbsp; '''<br>&nbsp; &nbsp; Retrives the current sequences in a show<br>&nbsp; &nbsp; Inputs : None<br>&nbsp; &nbsp; Outputs : list of sequences in show<br>&nbsp; &nbsp; '''<br><br>&nbsp; &nbsp; show_name, show_root = get_show()<br>&nbsp; &nbsp; show_folders = os.listdir(os.path.join(show_root, "show"))<br>&nbsp; &nbsp; seqs = [folder for folder in show_folders if "mod" not in folder]<br>&nbsp; &nbsp; seqs.remove(".DS_Store") # Remove index file if using MacOS<br><br>&nbsp; &nbsp; return seqs<br><br><br>def get_input():<br>&nbsp; &nbsp; '''<br>&nbsp; &nbsp; Processes the input from the command line<br>&nbsp; &nbsp; Inputs : None<br>&nbsp; &nbsp; Outputs : list of arguments from command line<br>&nbsp; &nbsp; '''<br>&nbsp; &nbsp; cli_input = sys.argv<br>&nbsp; &nbsp; cli_input.pop(0)<br><br>&nbsp; &nbsp; return cli_input<br><br></code></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="portfolio" class="p-0">
+        <div class="container-fluid p-0">
+            <div class="row g-0 popup-gallery">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../../assets/img/fullsize/6.jpg"></a></div>
+            </div>
+        </div>
+    </section>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/bs-init.js"></script>
+    <script src="../../assets/js/baguetteBox.min.js"></script>
+    <script src="../../assets/js/creative.js"></script>
+    <script src="../../assets/js/Lightbox-Gallery.js"></script>
+</body>
+
+</html>
