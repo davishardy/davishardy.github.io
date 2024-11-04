@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="canonical" href="https://davishardy.com/senior_blog/fall/2024_10_21_senior_project_fall_class_13.html">
-    <meta property="og:url" content="https://davishardy.com/senior_blog/fall/2024_10_21_senior_project_fall_class_13.html">
+    <link rel="canonical" href="https://davishardy.com/senior_blog/fall/2024_10_28_senior_project_fall_class_15.html">
+    <meta property="og:url" content="https://davishardy.com/senior_blog/fall/2024_10_28_senior_project_fall_class_15.html">
     <meta name="description" content="Davis Hardy, FX Artist/TD">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
@@ -35,17 +35,15 @@
             <div class="row" style="height: 426.5px;">
                 <div class="col-lg-10 mx-auto">
                     <h1 class="text-uppercase"><strong></strong></h1>
-                    <h2 class="text-start">Class 13</h2>
-                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">Progress Update:<br><br>The progress that I've made has been split between making Mesa and working with artist that are helping me out.</p>
+                    <h2 class="text-start">Class 15</h2>
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">Progress Update:<br><br>Today is the 3/4 check in for class. Here is the video that I presented:</p>
+                    <div class="text-center tutorial container my-5 ratio ratio-16x9" style="margin:0 auto"><iframe allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/1025955177?autoplay=1&amp;muted=1"></iframe></div>
                     <h4 class="text-start" style="padding-top: 51px;">Current status of Mesa</h4>
-                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">I've continued to think about the asset structure that I want to use in this pipeline. Compared to last week, I now have functions that will create the show folder, sequence folders, and shot folders in the correct locations. There is also error check in all of these functions for make sure that nobody is overriding/re-creating folders. I'm on track to complete the demo requested by class 15.</p>
-                    <picture><img src="../../assets/img/senior_blog/fall/class_13/Screenshot%202024-10-21%20at%208.15.15%20AM.jpg" width="700"></picture>
-                    <picture><img src="../../assets/img/senior_blog/fall/class_13/Screenshot%202024-10-21%20at%208.15.30%20AM.png" width="700"></picture>
-                    <h4 class="text-start" style="padding-top: 51px;">Current status of visuals</h4>
-                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">I gave Peter a base mesh and he did a lot of work over the past couple of days to match the reference. Here's what he's come up with so far. I also was able to talk to my rigger and establish what the character will need to do throughout the piece. Additionally, I talked to my animator and gave him a picture of the breakdown poses that are hit by ski racers.</p>
-                    <picture><img src="../../assets/img/senior_blog/fall/class_13/front_sculpt.png" width="700"></picture>
-                    <picture><img src="../../assets/img/senior_blog/fall/class_13/back_sculpt.png" width="700"></picture>
-                    <picture><img src="../../assets/img/senior_blog/fall/class_13/side_sculpt.png" width="350"></picture>
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">As discussed in the last blog post, I can now create shows, sequences, shots, sets, and props using JSON templates. However, all the files that I've been creating are only temp files, they empty. During class today, I made a couple of changes that make all of the files usable.<br><br>I saved models and shaders to the temp files I created. I then bound the shaders to their corresponding geometry and saved that as another file. Lastly, I imported the file again, and saved it out so I could utilize the payloading functionality in USD.</p>
+                    <picture><img src="../../assets/img/senior_blog/fall/class_15/asset_structure.jpg" width="700"></picture>
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">While two boxes are nice, I needed to test this process using an actual asset.</p>
+                    <picture><img src="../../assets/img/senior_blog/fall/class_15/pine1_wip.jpg" width="700"></picture>
+                    <p class="fs-6 text-start" style="padding-top: 16px;padding-bottom: 5px;">I've also created a TOP network at the bottom of the file to recache all the USD files that are created. This can be recached via a headless command line script. In theory, you could recache every asset in succession with a single Python script.<br><br>However, this is a very heavy-handed way of updating the mesh or materials of an asset. In practice, you only need to recache the <code><span style="color: rgb(249, 232, 20);">geo.usdc</span></code>&nbsp;or <code><span style="color: rgb(249, 232, 20);">mtl.usdc</span></code>&nbsp;files since the new geometry and shaders will automatically update in any files that reference them.</p>
                 </div>
             </div>
         </div>
