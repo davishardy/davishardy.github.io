@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'BorisBlackBloxx';
+	src: url(../../assets/fonts/BorisBlackBloxx-ffd4513dcbbfe1bf34177749fba9b9d1.eot) format('embedded-opentype'),
+	url(../../assets/fonts/BorisBlackBloxx-ffd4513dcbbfe1bf34177749fba9b9d1.eot) format('embedded-opentype'),
+	url(../../assets/fonts/BorisBlackBloxx-74da5d6efbbd245aedda052547bde580.woff2) format('woff2'),
+	url(../../assets/fonts/BorisBlackBloxx-1e7ccd368cb9e8578172b2f2b9a5e74c.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}
